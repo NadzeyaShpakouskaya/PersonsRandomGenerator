@@ -8,6 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    private var contacts: [Contact] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,14 +16,13 @@ class ViewController: UIViewController {
     }
     
     private func fetchContactList() {
-        // Do any additional setup after loading the view.
-        NetworkManager.shared.fetchData(dataType: ContactsInformation.self, from: "https://randomuser.me/api/") { results in
-            switch results {
-            case .success(let data):
-                let contacts = data.results
-                print(contacts)
+        NetworkManager.shared.fetchContacts { result in
+            switch result {
+            case .success(let contact):
+                self.contacts = contact
+                print(self.contacts)
             case .failure(let error):
-                print(error)
+                print(error.rawValue)
             }
         }
     }
