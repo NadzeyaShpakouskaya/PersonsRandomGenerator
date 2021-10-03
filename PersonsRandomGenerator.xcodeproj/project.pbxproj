@@ -13,6 +13,10 @@
 		FDAE74C72709820C0032A919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDAE74C52709820C0032A919 /* Main.storyboard */; };
 		FDAE74C92709820F0032A919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDAE74C82709820F0032A919 /* Assets.xcassets */; };
 		FDAE74CC2709820F0032A919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDAE74CA2709820F0032A919 /* LaunchScreen.storyboard */; };
+		FDAE74D7270984730032A919 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAE74D6270984730032A919 /* NetworkManager.swift */; };
+		FDAE74DA270984970032A919 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAE74D9270984970032A919 /* Contact.swift */; };
+		FDAE74DD270984C10032A919 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAE74DC270984C10032A919 /* StorageManager.swift */; };
+		FDAE74DF270984D20032A919 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAE74DE270984D20032A919 /* Routes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		FDAE74C82709820F0032A919 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDAE74CB2709820F0032A919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDAE74CD2709820F0032A919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDAE74D6270984730032A919 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FDAE74D9270984970032A919 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		FDAE74DC270984C10032A919 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		FDAE74DE270984D20032A919 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,8 @@
 				FDAE74D3270982350032A919 /* App */,
 				FDAE74D52709825C0032A919 /* ViewControllers */,
 				FDAE74C82709820F0032A919 /* Assets.xcassets */,
+				FDAE74DB2709849D0032A919 /* Models */,
+				FDAE74D8270984780032A919 /* Services */,
 				FDAE74D4270982490032A919 /* Storyboards */,
 			);
 			path = PersonsRandomGenerator;
@@ -89,6 +99,24 @@
 				FDAE74C32709820C0032A919 /* ViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FDAE74D8270984780032A919 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FDAE74D6270984730032A919 /* NetworkManager.swift */,
+				FDAE74DC270984C10032A919 /* StorageManager.swift */,
+				FDAE74DE270984D20032A919 /* Routes.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FDAE74DB2709849D0032A919 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FDAE74D9270984970032A919 /* Contact.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +190,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDAE74D7270984730032A919 /* NetworkManager.swift in Sources */,
+				FDAE74DF270984D20032A919 /* Routes.swift in Sources */,
 				FDAE74C42709820C0032A919 /* ViewController.swift in Sources */,
+				FDAE74DA270984970032A919 /* Contact.swift in Sources */,
+				FDAE74DD270984C10032A919 /* StorageManager.swift in Sources */,
 				FDAE74C02709820C0032A919 /* AppDelegate.swift in Sources */,
 				FDAE74C22709820C0032A919 /* SceneDelegate.swift in Sources */,
 			);
