@@ -56,15 +56,39 @@
 		FDAE74BE2709820C0032A919 /* PersonsRandomGenerator */ = {
 			isa = PBXGroup;
 			children = (
-				FDAE74BF2709820C0032A919 /* AppDelegate.swift */,
-				FDAE74C12709820C0032A919 /* SceneDelegate.swift */,
-				FDAE74C32709820C0032A919 /* ViewController.swift */,
-				FDAE74C52709820C0032A919 /* Main.storyboard */,
+				FDAE74D3270982350032A919 /* App */,
+				FDAE74D52709825C0032A919 /* ViewControllers */,
 				FDAE74C82709820F0032A919 /* Assets.xcassets */,
-				FDAE74CA2709820F0032A919 /* LaunchScreen.storyboard */,
-				FDAE74CD2709820F0032A919 /* Info.plist */,
+				FDAE74D4270982490032A919 /* Storyboards */,
 			);
 			path = PersonsRandomGenerator;
+			sourceTree = "<group>";
+		};
+		FDAE74D3270982350032A919 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FDAE74BF2709820C0032A919 /* AppDelegate.swift */,
+				FDAE74C12709820C0032A919 /* SceneDelegate.swift */,
+				FDAE74CD2709820F0032A919 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FDAE74D4270982490032A919 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FDAE74CA2709820F0032A919 /* LaunchScreen.storyboard */,
+				FDAE74C52709820C0032A919 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FDAE74D52709825C0032A919 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FDAE74C32709820C0032A919 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,7 +315,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 93336KV4Q7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PersonsRandomGenerator/Info.plist;
+				INFOPLIST_FILE = PersonsRandomGenerator/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +343,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 93336KV4Q7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PersonsRandomGenerator/Info.plist;
+				INFOPLIST_FILE = PersonsRandomGenerator/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
