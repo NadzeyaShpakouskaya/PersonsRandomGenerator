@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		FDAE74C02709820C0032A919 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAE74BF2709820C0032A919 /* AppDelegate.swift */; };
 		FDAE74C22709820C0032A919 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAE74C12709820C0032A919 /* SceneDelegate.swift */; };
-		FDAE74C42709820C0032A919 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAE74C32709820C0032A919 /* ViewController.swift */; };
+		FDAE74C42709820C0032A919 /* RandomPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAE74C32709820C0032A919 /* RandomPersonViewController.swift */; };
 		FDAE74C72709820C0032A919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDAE74C52709820C0032A919 /* Main.storyboard */; };
 		FDAE74C92709820F0032A919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDAE74C82709820F0032A919 /* Assets.xcassets */; };
 		FDAE74CC2709820F0032A919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDAE74CA2709820F0032A919 /* LaunchScreen.storyboard */; };
@@ -17,13 +17,18 @@
 		FDAE74DA270984970032A919 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAE74D9270984970032A919 /* Contact.swift */; };
 		FDAE74DD270984C10032A919 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAE74DC270984C10032A919 /* StorageManager.swift */; };
 		FDAE74DF270984D20032A919 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAE74DE270984D20032A919 /* Routes.swift */; };
+		FDAE74E12709DFF20032A919 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAE74E02709DFF20032A919 /* ImageManager.swift */; };
+		FDAE74E32709E2D10032A919 /* CachedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAE74E22709E2D10032A919 /* CachedImageView.swift */; };
+		FDAE74E6270AC6590032A919 /* FavouritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAE74E5270AC6590032A919 /* FavouritesListViewController.swift */; };
+		FDAE74E8270ACA440032A919 /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAE74E7270ACA440032A919 /* FavouriteTableViewCell.swift */; };
+		FDAE74EA270AD8C90032A919 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAE74E9270AD8C80032A919 /* DetailedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FDAE74BC2709820C0032A919 /* PersonsRandomGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonsRandomGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDAE74BF2709820C0032A919 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDAE74C12709820C0032A919 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FDAE74C32709820C0032A919 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FDAE74C32709820C0032A919 /* RandomPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPersonViewController.swift; sourceTree = "<group>"; };
 		FDAE74C62709820C0032A919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDAE74C82709820F0032A919 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDAE74CB2709820F0032A919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +37,11 @@
 		FDAE74D9270984970032A919 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		FDAE74DC270984C10032A919 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		FDAE74DE270984D20032A919 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		FDAE74E02709DFF20032A919 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		FDAE74E22709E2D10032A919 /* CachedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImageView.swift; sourceTree = "<group>"; };
+		FDAE74E5270AC6590032A919 /* FavouritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesListViewController.swift; sourceTree = "<group>"; };
+		FDAE74E7270ACA440032A919 /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
+		FDAE74E9270AD8C80032A919 /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +77,7 @@
 				FDAE74D3270982350032A919 /* App */,
 				FDAE74D52709825C0032A919 /* ViewControllers */,
 				FDAE74C82709820F0032A919 /* Assets.xcassets */,
+				FDAE74E42709E2D70032A919 /* Views */,
 				FDAE74DB2709849D0032A919 /* Models */,
 				FDAE74D8270984780032A919 /* Services */,
 				FDAE74D4270982490032A919 /* Storyboards */,
@@ -96,7 +107,9 @@
 		FDAE74D52709825C0032A919 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				FDAE74C32709820C0032A919 /* ViewController.swift */,
+				FDAE74C32709820C0032A919 /* RandomPersonViewController.swift */,
+				FDAE74E5270AC6590032A919 /* FavouritesListViewController.swift */,
+				FDAE74E9270AD8C80032A919 /* DetailedViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -105,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				FDAE74D6270984730032A919 /* NetworkManager.swift */,
+				FDAE74E02709DFF20032A919 /* ImageManager.swift */,
 				FDAE74DC270984C10032A919 /* StorageManager.swift */,
 				FDAE74DE270984D20032A919 /* Routes.swift */,
 			);
@@ -117,6 +131,15 @@
 				FDAE74D9270984970032A919 /* Contact.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FDAE74E42709E2D70032A919 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FDAE74E22709E2D10032A919 /* CachedImageView.swift */,
+				FDAE74E7270ACA440032A919 /* FavouriteTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,10 +215,15 @@
 			files = (
 				FDAE74D7270984730032A919 /* NetworkManager.swift in Sources */,
 				FDAE74DF270984D20032A919 /* Routes.swift in Sources */,
-				FDAE74C42709820C0032A919 /* ViewController.swift in Sources */,
+				FDAE74EA270AD8C90032A919 /* DetailedViewController.swift in Sources */,
+				FDAE74C42709820C0032A919 /* RandomPersonViewController.swift in Sources */,
+				FDAE74E12709DFF20032A919 /* ImageManager.swift in Sources */,
+				FDAE74E8270ACA440032A919 /* FavouriteTableViewCell.swift in Sources */,
+				FDAE74E6270AC6590032A919 /* FavouritesListViewController.swift in Sources */,
 				FDAE74DA270984970032A919 /* Contact.swift in Sources */,
 				FDAE74DD270984C10032A919 /* StorageManager.swift in Sources */,
 				FDAE74C02709820C0032A919 /* AppDelegate.swift in Sources */,
+				FDAE74E32709E2D10032A919 /* CachedImageView.swift in Sources */,
 				FDAE74C22709820C0032A919 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

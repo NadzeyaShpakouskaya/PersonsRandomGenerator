@@ -14,18 +14,18 @@ struct ContactsInformation: Codable {
 }
 
 struct Contact: Codable {
-    let gender: String
+    let gender: String?
     let name: Name
     let location: Location
-    let email: String
+    let email: String?
     let login: LoginInfo
     let dob: DateBirthInfo
     let registered: RegistrationInfo
-    let phone: String
-    let cell: String
+    let phone: String?
+    let cell: String?
     let id: IdInfo
     let picture: PicturesInfo
-    let nat: String
+    let nat: String?
 }
 
 struct Info: Codable {
@@ -35,12 +35,12 @@ struct Info: Codable {
 
 
 struct Name: Codable {
-    let title: String
-    let first: String
-    let last: String
+    let title: String?
+    let first: String?
+    let last: String?
     
     var fullName: String {
-        "\(title). \(first) \(last)"
+        "\(title ?? ""). \(first ?? "") \(last ?? "")"
     }
 }
 
@@ -49,10 +49,9 @@ struct Location: Codable {
     let city: String?
     let state: String?
     let country: String?
-    let postcode: Int?
     
     var fullAddress: String {
-        "\(street.lineAddress), \(city ?? ""), \(state ?? ""), \(country ?? "")"
+        "\(street.lineAddress ), \(city ?? ""), \(state ?? ""), \(country ?? "")"
     }
 }
 

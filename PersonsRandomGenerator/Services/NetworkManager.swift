@@ -13,7 +13,7 @@ class NetworkManager {
     static let shared = NetworkManager()
     private init() {}
     
-    func fetchContacts(quantity: Int = 1, completion: @escaping (Result<[Contact], NetworkError>) -> Void) {
+    func fetchContacts(quantity: Int = 1, completion: @escaping (Result<[Contact], Error>) -> Void) {
         let url = Routes.urlForContacts(of: quantity)
         fetchData(dataType: ContactsInformation.self, from: url) { result in
             switch result {
@@ -29,19 +29,17 @@ class NetworkManager {
         }
     }
     
+    
+    
     // Generic method to fetch Any data
-     private func fetchData<T:Codable>(dataType: T.Type, from url: String, convertFromSnakeCase: Bool = true, completion: @escaping (Result<T, NetworkError>) -> Void ) {
+     private func fetchData<T:Codable>(dataType: T.Type, from url: String, convertFromSnakeCase: Bool = true, completion: @escaping (Result<T, Error>) -> Void ) {
         guard let url = URL(string: url) else {
             print(NetworkError.invalidUrl)
             return
         }
         
         URLSession.shared.dataTask(with: url) { data, _, error in
-            guard let data = data else {
-                completion(.failure(.noData))
-                print(error?.localizedDescription ?? "unknown data error")
-                return
-            }
+            guard let data = data else { return }
             do {
                 let decoder = JSONDecoder()
                 if convertFromSnakeCase {
@@ -50,7 +48,7 @@ class NetworkManager {
                 let type = try decoder.decode(T.self, from: data)
                 completion(.success(type))
             } catch {
-                completion(.failure(.decodingError))
+                completion(.failure(error))
             }
         }.resume()
     }
@@ -59,7 +57,7 @@ class NetworkManager {
 enum NetworkError: String, Error {
     case invalidUrl = "Check URL: couldn't create url"
     case noData = "No data was provided"
-    case decodingError = "Decoding Error: Couldn't decode JSON to Model"
+    case decodingError
     case encodingError = "Encoding Error: Couldn't encode model to JSON"
 }
 
