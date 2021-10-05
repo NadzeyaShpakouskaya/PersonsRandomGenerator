@@ -16,7 +16,7 @@ struct Routes {
     }
     
     static func urlForContacts(of number: Int, page: Int) -> String {
-        "\(basicURL)page=\(page)&results=\(number)"
+        "\(basicURL)?page=\(page)&results=\(number)"
     }
     
 }

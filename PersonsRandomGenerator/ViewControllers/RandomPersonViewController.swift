@@ -13,8 +13,9 @@ class RandomPersonViewController: UIViewController {
     @IBOutlet weak var contactInfoTableView: UITableView!
     @IBOutlet weak var favouriteButton: UIButton!
     
-    private var contacts: [Contact] = []
+
     private var currentContact: Contact?
+    private var isAddedToFavorite = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,13 +30,21 @@ class RandomPersonViewController: UIViewController {
     @IBAction func refreshButtonPressed() {
         fetchContact()
         favouriteButton.setImage(UIImage(systemName: "heart.circle"), for: .normal)
+        isAddedToFavorite = false
     }
     
     @IBAction func favouriteButtonPressed() {
-        guard let contact = currentContact else { return }
-        contacts.append(contact)
-        StorageManager.shared.save(contact: contact)
-        favouriteButton.setImage(UIImage(systemName: "heart.circle.fill"), for: .normal)
+        if isAddedToFavorite {
+            favouriteButton.setImage(UIImage(systemName: "heart.circle"), for: .normal)
+            let count = StorageManager.shared.fetchContacts().count
+            StorageManager.shared.deleteContact(at: count - 1)
+        } else {
+            guard let contact = currentContact else { return }
+            StorageManager.shared.save(contact: contact)
+            favouriteButton.setImage(UIImage(systemName: "heart.circle.fill"), for: .normal)
+        }
+        isAddedToFavorite.toggle()
+
     }
     
 

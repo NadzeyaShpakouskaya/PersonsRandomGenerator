@@ -22,6 +22,8 @@
 		FDAE74E6270AC6590032A919 /* FavouritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAE74E5270AC6590032A919 /* FavouritesListViewController.swift */; };
 		FDAE74E8270ACA440032A919 /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAE74E7270ACA440032A919 /* FavouriteTableViewCell.swift */; };
 		FDAE74EA270AD8C90032A919 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAE74E9270AD8C80032A919 /* DetailedViewController.swift */; };
+		FDAE74EC270C7A7B0032A919 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAE74EB270C7A7B0032A919 /* ListViewController.swift */; };
+		FDAE74EE270C8CC80032A919 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAE74ED270C8CC80032A919 /* ListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		FDAE74E5270AC6590032A919 /* FavouritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesListViewController.swift; sourceTree = "<group>"; };
 		FDAE74E7270ACA440032A919 /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
 		FDAE74E9270AD8C80032A919 /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
+		FDAE74EB270C7A7B0032A919 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		FDAE74ED270C8CC80032A919 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				FDAE74C32709820C0032A919 /* RandomPersonViewController.swift */,
+				FDAE74EB270C7A7B0032A919 /* ListViewController.swift */,
 				FDAE74E5270AC6590032A919 /* FavouritesListViewController.swift */,
 				FDAE74E9270AD8C80032A919 /* DetailedViewController.swift */,
 			);
@@ -138,6 +143,7 @@
 			children = (
 				FDAE74E22709E2D10032A919 /* CachedImageView.swift */,
 				FDAE74E7270ACA440032A919 /* FavouriteTableViewCell.swift */,
+				FDAE74ED270C8CC80032A919 /* ListTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -220,10 +226,12 @@
 				FDAE74E12709DFF20032A919 /* ImageManager.swift in Sources */,
 				FDAE74E8270ACA440032A919 /* FavouriteTableViewCell.swift in Sources */,
 				FDAE74E6270AC6590032A919 /* FavouritesListViewController.swift in Sources */,
+				FDAE74EE270C8CC80032A919 /* ListTableViewCell.swift in Sources */,
 				FDAE74DA270984970032A919 /* Contact.swift in Sources */,
 				FDAE74DD270984C10032A919 /* StorageManager.swift in Sources */,
 				FDAE74C02709820C0032A919 /* AppDelegate.swift in Sources */,
 				FDAE74E32709E2D10032A919 /* CachedImageView.swift in Sources */,
+				FDAE74EC270C7A7B0032A919 /* ListViewController.swift in Sources */,
 				FDAE74C22709820C0032A919 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

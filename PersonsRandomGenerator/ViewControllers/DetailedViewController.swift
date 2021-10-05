@@ -16,7 +16,7 @@ class DetailedViewController: UIViewController {
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
-    
+    @IBOutlet weak var emailLabel: UILabel!
     
     var contact: Contact!
     var indexOfContact: Int!
@@ -41,7 +41,8 @@ class DetailedViewController: UIViewController {
         genderLabel.text = contact.gender
         addressLabel.text = contact.location.fullAddress
         ageLabel.text = "\(contact.dob.age ?? 18)"
-        phoneLabel.text = contact.cell
+        phoneLabel.text = "\(contact.cell ?? "n/a"),\n\(contact.phone ?? "n/a")"
+        emailLabel.text = contact.email
     }
     
     private func setUpImages() {

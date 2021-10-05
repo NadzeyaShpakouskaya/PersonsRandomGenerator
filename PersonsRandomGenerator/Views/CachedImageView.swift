@@ -12,7 +12,7 @@ class CachedImageView: UIImageView {
     func fetchImage(from url: String) {
         guard let url = URL(string: url) else { return }
         
-        //If we have chached image, use it
+        //If we have cached image, use it
         if let cachedImage = getCachedImage(from: url) {
             image = cachedImage
             return
